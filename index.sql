@@ -35,3 +35,10 @@ CREATE TABLE _formation(
     url_formation varchar,
     tri varchar,
 );
+
+
+create Table _type_bac(
+    type_bac varchar Primary key
+);
+
+
