@@ -9,7 +9,7 @@ set schema 'parcoursup';
 
 
 CREATE TABLE _academie(
-    Academie_nom VARCHAR PRIMARY KEY,
+    Academie_nom VARCHAR PRIMARY KEY
 );
 
 CREATE TABLE _filiere(
@@ -17,13 +17,13 @@ CREATE TABLE _filiere(
     filiere_libelle VARCHAR(200) NOT NULL,
     filiere_libelle_tres_abrege VARCHAR(50) NOT NULL,
     filiere_libelle_abrege VARCHAR(100) NOT NULL,
-    filiere_libelle_detaille_bis VARCHAR(300) NOT NULL,
+    filiere_libelle_detaille_bis VARCHAR(300) NOT NULL
 );
 
 CREATE TABLE _etablissement(
     etablissement_code_uai VARCHAR(10),
     etablissement_nom VARCHAR(50),
-    etablissemet_statut VARCHAR(50),
+    etablissemet_statut VARCHAR(50)
 );
 
 CREATE TABLE _formation(
@@ -33,7 +33,7 @@ CREATE TABLE _formation(
     list_com varchar,
     concours_communs_banque_epreuve varchar,
     url_formation varchar,
-    tri varchar,
+    tri varchar
 );
 
 
@@ -51,7 +51,7 @@ create table _effectif_selon_mention(
     effectif_admis_neo_bac_selon_mention int
 
     
-)
+);
 
 
 
@@ -68,15 +68,15 @@ create table _admissions_selon_type_neo_bac(
 
 
 
-)
+);
 
 create table _regroupement(
     libelle_regroupement varchar primary key
-)
+);
 
 create table rang_dernier_appele_selon_regroupement(
     rang_dernier_appele int
 
     
 
-)
+);
