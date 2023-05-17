@@ -37,8 +37,46 @@ CREATE TABLE _formation(
 );
 
 
+
+create table _session(
+    session_annee int primary key
+);
+
+
+create table _mention_bac(
+    libelle_mention varchar primary key
+);
+
+create table _effectif_selon_mention(
+    effectif_admis_neo_bac_selon_mention int
+
+    
+)
+
+
+
+
+
 create Table _type_bac(
     type_bac varchar Primary key
 );
 
+create table _admissions_selon_type_neo_bac(
+    effectif_candidat_neo_bac_classes int
 
+    
+
+
+
+)
+
+create table _regroupement(
+    libelle_regroupement varchar primary key
+)
+
+create table rang_dernier_appele_selon_regroupement(
+    rang_dernier_appele int
+
+    
+
+)
